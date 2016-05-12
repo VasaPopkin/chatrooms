@@ -4,6 +4,8 @@ var path = require('path');
 var mime = require('mime');
 var cache = {};
 
+//check git
+
 function send404(responce){
 	responce.writeHead(404, {'Content-Type': 'text/plain'});
 	responce.write('Error 404: resource not found');
